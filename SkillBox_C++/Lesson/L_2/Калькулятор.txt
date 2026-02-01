@@ -1,0 +1,11 @@
+int main() {
+
+        int productCoast = 100;
+	int delyveryCoast = 5;
+	int discount = 5;
+	cout << "Стоимость товара : "  << productCoast << "\n";
+	cout << "Стоимость доставки : " << delyveryCoast << "\n";
+	cout << "Скидка : " << discount << "\n";
+	cout << "Итого : " << (productCoast + delyveryCoast) - discount;
+    
+};

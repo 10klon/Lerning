@@ -1,0 +1,18 @@
+	int main() {
+		
+    int shiftDurationMinutes = 480;
+    int clientDuration = 2;
+    int cashierDuration = 4;
+    int result = shiftDurationMinutes / (clientDuration + cashierDuration);
+    
+    std::cout << "Эта программа рассчитает, сколько клиентов успеет обслужить кассир за смену. \n";
+     std::cout << "Введите длительность смены в минутах: " << shiftDurationMinutes << "\n";
+     std::cout << "Сколько минут клиент делает заказ? " << clientDuration << "\n";
+     std::cout << "Сколько минут кассир собирает заказ? " << cashierDuration << "\n";
+     std::cout << "-----Считаем----- \n";
+     std::cout << "За смену длиной " << shiftDurationMinutes << "минут кассир успеет обслужить " << result << " клиентов.";
+
+
+
+
+};
