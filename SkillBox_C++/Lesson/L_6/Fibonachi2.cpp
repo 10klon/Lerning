@@ -41,7 +41,7 @@ int main() {
 			first = second;
 			second = next;
 		}
-		cout << "Число в последовательности: " << second << endl;
+		cout << "Число в последовательности: " << second << "\n";
 		return 0;
 
 	}

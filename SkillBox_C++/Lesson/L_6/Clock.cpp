@@ -12,30 +12,34 @@ int main() {
 
 	int setTime;
 	int setTextCount;
-	string text = "Ку - ку";
+	string text = "Ку-ку";
 	cout << " Введите, который час, от 0-23.\n";
-	cin >> setTime;
 
-	if (setTime < 0)
+
+
+	if (!(cin >> setTime) || setTime < 0 || setTime > 23)
 	{
-		cout << " Ошибка введите положительное число от 0-23.\n";
+		cout << " Ошибка: введите положительное число от 0-23.\n";
 		return 1;
 
 	}
-	setTextCount = setTime;
-	if (setTime > 12 && setTime <= 23)
+	else if (setTime > 12)
 	{
 		setTextCount = setTime % 12;
 
 	}
-	if (setTime == 0 || setTime == 24)
+	else
+	{
+		setTextCount = setTime;
+	}
+	if (setTime == 0)
 	{
 		setTextCount = 12;
 	}
 
 
 
-	for (size_t i = 0; i < setTextCount; i++)
+	for (int i = 0; i < setTextCount; i++)
 	{
 		cout << text << "\n";
 	}
