@@ -1,8 +1,7 @@
 ﻿#include <iostream>
 #include <Windows.h>
 #include <consoleapi2.h>
-#include <cstdlib>
-#include <limits> 
+
 using namespace std;
 
 int main() {

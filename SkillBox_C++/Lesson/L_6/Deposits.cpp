@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 #include <Windows.h>
 #include <consoleapi2.h>
-#include <cstdlib>
+
 using namespace std;
 
 int main() {
