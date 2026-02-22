@@ -1,12 +1,12 @@
 ﻿#include <iostream>
-#include <Windows.h>
-#include <consoleapi2.h>
+
+
 #include <cstdlib>
 using namespace std;
 
 int main() {
-	SetConsoleCP(1251);        // кодировка для ввода (cin)
-	SetConsoleOutputCP(1251);  // кодировка для вывода (cout)
+	
+	
 
 	cout << "_____Банкомат_____ \n";
 

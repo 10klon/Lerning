@@ -1,16 +1,14 @@
 ﻿#include <iostream>
-#include <Windows.h>
-#include <consoleapi2.h>
+
+
 #include <cstdlib>
 using namespace std;
 
 int main() {
-	SetConsoleCP(1251);        // кодировка для ввода (cin)
-	SetConsoleOutputCP(1251);  // кодировка для вывода (cout)
-	int a, b, c, m, n, k, z, z2;
-
-	while (true)
-	{
+	
+	
+	int a, b, c, m, n, k;
+		
 
 
 		cout << "_____Boxes_____ \n";
@@ -41,14 +39,13 @@ int main() {
 
 		cout << " Проверяем поместится ли. \n";
 
-		if (a * b * c < m * n * k)
 
-		{
-			cout << " Не поместится объем превышен \n";
-		}
-		if (a >= m && b >= n && c >= k || a >= m && b >= k && c >= n || a >= k && b >= m && c >= n || a >= k && b >= n && c >= m || a >= n && b >= k && c >= m || a >= n && b >= m && c >= k) {
+
+
+		if ((a >= m && b >= n && c >= k )|| (a >= m && b >= k && c >= n )|| (a >= k && b >= m && c >= n )||( a >= k && b >= n && c >= m) || ( a >= n && b >= k && c >= m )|| (a >= n && b >= m && c >= k)) {
 
 			cout << " Поместится \n";
+			return 0;
 
 		}
 
@@ -57,12 +54,13 @@ int main() {
 		else
 		{
 			cout << " Не поместится \n";
+			return 0;
 		}
 
 
 
 
-	}
+	
 
 
 
